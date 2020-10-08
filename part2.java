@@ -7,24 +7,25 @@ public class part2 {
         System.out.println("\nEnter Grade: ");
         String gradeGiven = input.nextLine();
         int grade = Integer.parseInt(gradeGiven);
+        int i = 0;
 
         if (grade >= 90) {
-            System.out.println("Got an A");
+            i = 1;
         }
         if (grade < 90 && grade >= 80) {
-            System.out.println("Got an B");
+            i = 2;
         }
         if (grade < 80 && grade >= 70) {
-            System.out.println("Got an C");
+            i = 3;
         }
         if (grade < 70 && grade >= 60) {
-            System.out.println("Got an D");
+            i = 4;
         }
         if (grade < 60) {
-            System.out.println("Got an F - OOF");
+            i = 5;
         }
-        int i = 1;
-        switch (grade) {
+        
+        switch (i) {
             case 1:
                 System.out.println("Got an A");
                 break;
@@ -38,14 +39,9 @@ public class part2 {
                 System.out.println("Got an D");
                 break;  
             default:
-            System.out.println("Got an F - OOF");
+            System.out.println("Got an F -> OOF");
                 break;
         }
-
-
-
-
-
         input.close();
     }
 }

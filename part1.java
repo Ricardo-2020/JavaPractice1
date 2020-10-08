@@ -21,7 +21,7 @@ public class part1 {
             System.out.println("Got an D");
         }
         else if (grade < 60) {
-            System.out.println("Got an F - OOF");
+            System.out.println("Got an F -> OOF");
         }
         input.close();
     }
