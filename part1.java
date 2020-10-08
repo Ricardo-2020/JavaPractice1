@@ -11,23 +11,18 @@ public class part1 {
         if (grade >= 90) {
             System.out.println("Got an A");
         }
-        if (grade < 90 && grade >= 80) {
+        else if (grade < 90 && grade >= 80) {
             System.out.println("Got an B");
         }
-        if (grade < 80 && grade >= 70) {
+        else if (grade < 80 && grade >= 70) {
             System.out.println("Got an C");
         }
-        if (grade < 70 && grade >= 60) {
+        else if (grade < 70 && grade >= 60) {
             System.out.println("Got an D");
         }
-        if (grade < 60) {
+        else if (grade < 60) {
             System.out.println("Got an F - OOF");
         }
-
-
-
-
-
-
+        input.close();
     }
 }
